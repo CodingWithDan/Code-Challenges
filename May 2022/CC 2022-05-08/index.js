@@ -37,7 +37,7 @@ function validParentheses(woa) {
 
 
   function disemvowel(str) {
-    let st = str.split('')
+    let st = str.split(' ').join('')
     for (let i = 0; i <= st.length; i++){
       if (st[i] === 'a' || st[i]=== 'A' ||
          st[i] === 'e' || st[i]=== 'E' ||
