@@ -6,21 +6,21 @@
 
 
 function validParentheses(woa) {
-    let parens = woa.split('')
-    for (let i = 0; i <= parens.length; i++){
-      if (parens[i] === "(" && parens[i + 1] === ")"){
-        parens.splice(i, 2)
-        i = i - 2
-      }
-    }
-    if (parens.join('') === ""){
-      return true
-    }
-    
-    if (parens.join('') !== ""){
-      return false
+  let parens = woa.split('')
+  for (let i = 0; i <= parens.length; i++){
+    if (parens[i] === "(" && parens[i + 1] === ")"){
+      parens.splice(i, 2)
+      i = i - 2
     }
   }
+  if (parens.join('') === ""){
+    return true
+  }
+  
+  if (parens.join('') !== ""){
+    return false
+  }
+}
 
 //========================
 //Disemvowel Trolls
@@ -36,17 +36,17 @@ function validParentheses(woa) {
 // Note: for this kata y isn't considered a vowel.
 
 
-  function disemvowel(str) {
-    let st = str.split(' ').join('')
-    for (let i = 0; i <= st.length; i++){
-      if (st[i] === 'a' || st[i]=== 'A' ||
-         st[i] === 'e' || st[i]=== 'E' ||
-         st[i] === 'i' || st[i]=== 'I' ||
-         st[i] === 'o' || st[i]=== 'O' ||
-         st[i] === 'u' || st[i]=== 'U'){
-            st.splice(i , 1)
-            i--
-          }
-    }
-    return st.join('');
+function disemvowel(str) {
+  let st = str.split('')
+  for (let i = 0; i <= st.length; i++){
+    if (st[i] === 'a' || st[i]=== 'A' ||
+       st[i] === 'e' || st[i]=== 'E' ||
+       st[i] === 'i' || st[i]=== 'I' ||
+       st[i] === 'o' || st[i]=== 'O' ||
+       st[i] === 'u' || st[i]=== 'U'){
+          st.splice(i , 1)
+          i--
+        }
   }
+  return st.join('');
+}
