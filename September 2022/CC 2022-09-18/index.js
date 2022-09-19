@@ -6,10 +6,11 @@
 // The function should not modify the array. It should return the new array.
 
 function filterRange(arr, a, b){
-    let dope =[]
     let order = arr.sort()
-    arr.forEach
-}
+    return order.filter(x => x >= a && x <= b )
+            
+        }
+  
 
 let arrd = [5, 3, 8, 1];
-filterRange(arrd)
+filterRange(arrd, 1, 4)
