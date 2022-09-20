@@ -13,4 +13,7 @@ function filterRange(arr, a, b){
   
 
 let arrd = [5, 3, 8, 1];
-filterRange(arrd, 1, 4)
+let filterd = filterRange(arrd, 1, 4)
+
+console.log(filterd)
+console.log(arrd)
