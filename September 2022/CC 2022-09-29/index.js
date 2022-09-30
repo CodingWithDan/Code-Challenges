@@ -18,7 +18,7 @@
 // "1,2"  =>  NULL
 
 function array(arr){
-    return arr.length > 3 ? arr.slice(2, -2).split(',').join(' ') : null
+    return arr.split(',').slice(1, -1).join(' ') || null
   }
   
   
