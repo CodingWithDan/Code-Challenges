@@ -1,6 +1,6 @@
-//==================================
-//Huntober: The Challenge - Day 2
-//==================================
+//========================================
+//Huntober: String Week Challenge - Day 2
+//========================================
 
 // This week we will be discovering hidden messages by manipulating a given string. Your solutions should account for any non-empty string. On Friday we'll combine our functions to decode a message.
 
@@ -20,7 +20,8 @@ let meow = "af)|Cz>:CGAHY1_2+(OHYYTM!2vka,&yAlWJ3.r&ZVs4F5&bEa<1r1_nlsR!eA-dOUmg
 
 function organize(ins){
   let place = meow.indexOf('c')
-  return ins.slice(place + 1, -1).replaceAll("Eek!", '').split('').reverse().join('')
+  let answer = ins.slice(place + 1, -1).replaceAll("Eek!", '').split('').reverse().join('')
+  console.log(answer)
 }
 
 organize(meow)

@@ -1,6 +1,6 @@
-//==================================
-//Huntober: The Challenge - Day 1
-//==================================
+//========================================
+//Huntober: String Week Challenge - Day 1
+//=========================================
 
 // This week we will be discovering hidden messages by manipulating a given string. Your solutions should account for any non-empty string. On Friday we'll combine our functions to decode a message.
 
