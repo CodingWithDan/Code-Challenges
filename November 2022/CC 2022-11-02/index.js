@@ -14,7 +14,7 @@
 //so first we want to split into an array so it can be properly sorted.
 //Then when we sort, we want to target the last letters in each word. How do we do that?
 //We use charCodeAt() which grabs the ASCII value passed in of an element of a given index. 
---> we input the index of the last letter (a.length - 1)
+// --> we input the index of the last letter (a.length - 1)
 
 function last(x){
  
