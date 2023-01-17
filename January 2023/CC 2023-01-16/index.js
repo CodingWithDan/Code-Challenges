@@ -15,3 +15,4 @@ var greet = function(name) {
      return `Hello ${nam[0].toUpperCase() + nam.slice(1)}!`
    };
    
+   greet('riley')
