@@ -158,14 +158,6 @@ const reverseSeq = n => {
    return (number % a === 0 && number % b === 0) ? true : false 
    }
   
-  //===============================
-  //You Can't Code Under Pressure #1
-  //===============================
-  //Code as fast as you can! You need to double the integer and return it.
-  
-  function doubleInteger(i) {
-    return i * 2;
-  }
-  
+
   
   
