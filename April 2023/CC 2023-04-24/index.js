@@ -22,5 +22,24 @@
 //     function should be case insensitive to pass the tests
 
 function validateHello(greetings) {
-    return greetings == 'hello' || greetings == 'ciao' || greetings == 'salut' || greetings == 'hallo' || greetings == 'hola' || greetings == 'czesc' || greetings == 'ahoj' ? true : false
+  const newStr = greetings.toLowerCase();
+
+  if (newStr.includes('hello') ||
+      newStr.includes('ciao')  ||
+      newStr.includes('salut') ||
+      newStr.includes('hallo') ||
+      newStr.includes('hola')  ||
+      newStr.includes('ahoj')  ||
+      newStr.includes('czesc')) {
+    return true;
+  } else return false;
+}
+
+  //ALT
+
+  function validateHello(greeting) {
+    let greetings = greeting.toLowerCase().split(' ')
+    return greetings.includes('hello') || greetings.incldues('ciao') || greetings.includes('salut') || greetings.includes('hallo') || greetings.includes('hola') || greetings.includes('czesc') || greetings.includes('ahoj')  ? true : false
   }
+  
+
