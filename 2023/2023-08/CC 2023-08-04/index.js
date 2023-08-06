@@ -30,23 +30,17 @@
 
 var reverseList = function(head) {
     
-    reverseList() //{
-        let current = this.head
-        let prev = null
-        while (current) {
-            const temp = current.next
-            current.next = prev
-            prev = current
-            current = temp
-        }
-        return prev
-        }
-//};
 
-class Node {
-    constructor(value, prev, next) {
-        this.value = value
-        this.next || null
+    let current = head
+    let prev = null
+
+    while (current) {
+        const temp = current.next
+        current.next = prev
+        prev = current
+        current = temp
     }
-}
+    return prev
+
+};
 
