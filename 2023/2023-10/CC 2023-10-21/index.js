@@ -23,7 +23,6 @@ function solve(arr) {
   }
   
   
-
 //ALT
 
 function solve(arr){
