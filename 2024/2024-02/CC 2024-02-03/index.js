@@ -21,7 +21,6 @@ function getSumOfDigits(integer) {
     return total
     
     }
-    
     //ALT
     
     function getSumOfDigits(integer) {
